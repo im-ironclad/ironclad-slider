@@ -1,5 +1,5 @@
 # Ironclad Slider
-A slider component ideally for a photographers portfolio to shift through photoshoots of different people/couples.  
+A slider component ideally for a photographers portfolio to shift through photoshoots of different people/couples. The goal was to host a lot of content (a lot of photos) in a small space so not to take up too much real estate on the page.  
 I'm sure it could also be used for other content.
 **Feel free to use this.**
 
