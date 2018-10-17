@@ -1,0 +1,51 @@
+/**
+ * Breakpoints
+ */
+$screen-sm-min: 768px;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-md-min: 992px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-lg-min: 1250px;
+$screen-md-max: $screen-lg-min - 1;
+$screen-xl-min: 1500px;
+$screen-lg-max: $screen-xl-min - 1;
+
+$sliderBreakpoint: 950px;
+
+/**
+ * Spacing
+ */
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-md: 30px;
+$spacing-lg: 40px;
+
+/**
+ * Layout
+ */
+$min-page-width: 320px;
+$cont-xl: 95%;
+$cont-lg: 85%;
+$cont-md: 75%;
+$cont-sm: 60%;
+
+/**
+ * Colors
+ */
+$color-white: #fff;
+$color-black: #111;
+$color-light: #ffffff;
+$color-grey-light: #777777;
+$color-grey-dark: #444444;
+
+/**
+ * Font
+ */
+$font-family-primary: Helvetica,
+Arial,
+"Lucida Grande",
+sans-serif;
+$font-light: 200;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;

@@ -1,0 +1,70 @@
+/**
+ * Layout mixins
+ */
+
+@mixin clear() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  // TODO: Set up container mixin
+}
+
+/**
+ * Spacing mixin
+ * - refers to vertical space
+ */
+@mixin spacing() {
+  // TODO: set up spacing mixin
+}
+
+/**
+ * Gutter mixin
+ * - refers to horizonal space
+ */
+@mixin gutter() {
+  // TODO: set up gutter mixin
+}
+
+/**
+ * Mixin for positioning elements - absolute
+ */
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: 1) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+/**
+ * Mixin for using transform trick to center
+ * an element inside container using absolute positioning
+ * 
+ * Choice of horizontally vertically or both.
+ */
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  @else {
+    top: 0;
+    left: 0;
+  }
+}

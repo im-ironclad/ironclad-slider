@@ -1,0 +1,37 @@
+/**
+ * Entry point:
+ * styles/App.scss
+ * 
+ * Based off of ITCSS Architecture with a few personal changes: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ */
+
+/**
+ * Difference between tools & utilities
+ * 
+ * Tools does not output CSS but sets up variables and additional mixins for use later
+ * Utilities output actual CSS and implement the mixins imported earlier from Tools
+ * TODO: Possibly think of better names
+ */
+
+/**
+ * Order is important until you hit the utilities
+ */
+
+@import "settings/variables";
+
+// Animations must come after layout to call layout mixins
+@import "tools/layout";
+@import "tools/animations";
+@import "tools/typography";
+
+// Set/Reset generic things
+@import "generic/reset";
+@import "generic/fonts";
+@import "generic/elements";
+
+// Order Utilities alphabetically
+@import "utilities/breakpoints";
+
+// Order Components alphabetically
+@import "components/main";
+@import "components/slider";

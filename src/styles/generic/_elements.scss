@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%; // Sets up the Base 10 stuff
+}
+
+body {
+  @include font("body");
+  position: relative;
+  overflow-x: hidden;
+  min-width: $min-page-width;
+  margin: 0 auto;
+  font-family: $font-family-primary;
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-white;
+  color: $color-black;
+  &.is-locked {
+    overflow: hidden;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+sup {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+hr {
+  height: 1px;
+  max-width: $cont-xl;
+  margin: 0 auto;
+  border: 0;
+  background-color: $color-black;
+}
+
+[type=text],
+[type=number],
+[type=search],
+[type=password],
+[type=email],
+[type=tel],
+[type=radio],
+[type=submit],
+select,
+textarea {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+
+  appearance: none;
+  outline: 0;
+  &:-ms-expand {
+    display: none;
+  }
+}
+
+[type=radio] {
+  border-radius: 50%;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  background: none;
+}

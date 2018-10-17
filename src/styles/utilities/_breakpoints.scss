@@ -1,0 +1,30 @@
+// TODO: Decide if we need this file or directory even
+
+/*-----------------------
+@HOOKS
+
+adds ability to check a breakpoint in JS
+see ww.common.checkBreakpoint() in main.js
+------------------------*/
+
+html {
+  font-family: "bp-mobile";
+}
+
+@media (min-width: $screen-sm-min) {
+  html {
+    font-family: "bp-tablet";
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  html {
+    font-family: "bp-desktop";
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  html {
+    font-family: "bp-desktop-large";
+  }
+}

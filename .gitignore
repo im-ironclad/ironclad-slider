@@ -1,0 +1,11 @@
+# System Files
+.DS_Store
+
+# JavaScript environment file
+# Please duplicate .env-example.json, name it .env.json, and fill in the appropriate values
+# See gulpfile.js for usage
+.env.json
+
+# NPM
+# For consistency, please install packages using NPM (not Bower) whenever possible
+node_modules/
